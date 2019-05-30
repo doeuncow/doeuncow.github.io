@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta content="charset=utf-8" />
+   <title>JONNY STUDIO (❁´▽`❁)</title>
+
+   
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+
+   <script>
+      jQuery(document).ready(function($) {
+         $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+               scrollTop: $(this.hash).offset().top
+            }, 500);
+         });
+      });
+   </script>
+</head>
+
+<body style="margin: -8px">
+   <div class="menu">
+      <div class="wrap">
+         <a href="#HOME" class="scroll">HOME</a>
+         <a href="#PORTFOLIO" class="scroll">PORTFOLIO</a>
+      </div>
+   </div>
+
+   <div id="fullpage">
+      <div class="section" id="HOME">
+         <div class="wrap">
+            <img class="title" src="images/profile.jpg">
+         </div>
+      </div>
+      <div class="section" id="PORTFOLIO">
+         <div class="wrap">
+            <div class="portfolio-box">
+               <div class="left">
+                  <img class="portfolio-img" src="images/portfolio1.jpg">
+               </div>
+               <div class="right">
+                  <a><br><br><br>포트폴리오 예시 1<br><br><br>제작년도 : 0000-00-00<br><br>포트폴리오와 관련된 설명 작성작성<br><br>저장소 링크 : https://github.com/~~<br></a>
+               </div>
+            </div>
+            <div class="portfolio-box">
+               <div class="left">
+                  <img class="portfolio-img" src="images/portfolio2.jpg">
+               </div>
+               <div class="right">
+                  <a><br><br><br>포트폴리오 예시 2<br><br><br>제작년도 : 0000-00-00<br><br>포트폴리오와 관련된 설명 작성작성<br><br>저장소 링크 : https://github.com/~~<br></a>
+               </div>
+            </div>
+            <div class="portfolio-box">
+               <div class="left">
+                  <img class="portfolio-img" src="images/portfolio3.jpg">
+               </div>
+               <div class="right">
+                  <a><br><br><br>포트폴리오 예시 3<br><br><br>제작년도 : 0000-00-00<br><br>포트폴리오와 관련된 설명 작성작성<br><br>저장소 링크 : https://github.com/~~<br></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <style>
+      .menu {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 67px;
+         line-height: 68px;
+         z-index: 70;
+         background-image: url(images/header.jpg);
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .menu .wrap {
+         #float: right;
+         text-align: center;
+         background-color: #ffff;
+         padding-right: 40px;
+         opacity: 0.5;
+      }
+
+      .menu .wrap a {
+         cursor: pointer;
+         display: inline-block;
+         color: #353535;
+         font-size: 17px;
+         font-weight: 800;
+         margin-left: 10px;
+         opacity: 0.7;
+         transition: all 300ms;
+      }
+
+      #fullpage {
+         background-color: #88734b;
+      }
+
+      .section {
+         background-color: #f4e7d6;
+         width: 80%;
+         text-align: center;
+         margin-left: calc(100% - 90%);
+         padding-top: 160px;
+         padding-bottom: 60px;
+         scroll-behavior: smooth;
+
+      }
+
+      #HOME .title {
+         width: 100%;
+      }
+
+      #PORTFOLIO .portfolio-img {
+         width: 280px;
+      }
+
+      #PORTFOLIO .left {
+         float: left;
+      }
+
+      #PORTFOLIO .right a {
+         cursor: pointer;
+         display: inline-block;
+         color: #353535;
+         font-size: 17px;
+         font-weight: 800;
+         margin-left: 50px;
+         opacity: 0.7;
+         transition: all 300ms;
+         text-align: left;
+      }
+
+      .portfolio-box {
+         display: inline-block;
+         width: calc(100% - 30%);
+         padding-top: calc(100% - 85%);
+      }
+
+      #PORTFOLIO .wrap {
+         display: inline-block;
+         background-color: #ffffff;
+         background-color: rgba(255, 255, 255, 0.5);
+         width: calc(100% - 20%);
+         #padding-top: calc(100% - 90%);
+         padding-bottom: calc(100% - 90%);
+
+      }
+
+
+      .portfolio-text {
+         text-align: center;
+         font-size: 50px;
+      }
+   </style>
+</body>
+
+</html>
